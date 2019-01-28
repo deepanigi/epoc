@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-
+// import {request} from 'request';
 @Component({
   selector: 'app-contact',
   template: `
@@ -93,6 +93,27 @@ export class ContactComponent implements OnInit {
   processForm() {
     const allInfo = `My name is ${this.name}. My email is ${this.email}. My message is ${this.message}`;
     alert(allInfo); 
+
+    // var options = { method: 'POST',
+    //   url: 'https://prod-21.centralus.logic.azure.com/workflows/cdafd7a5c40142e7835316ead2e102ce/triggers/manual/paths/invoke/createshipment/360/pending/deepan.ignaatious@rojoconsultancy.com/2019-10-08%2000:00:00.000/hello%20test',
+    //   qs: 
+    //    { 'api-version': '2016-10-01',
+    //      sp: '%2Ftriggers%2Fmanual%2Frun',
+    //      sv: '1.0',
+    //      sig: 'HZYqACq_NrI0fzzuinrvXk5rl-02Gh_5vRM1qfeB-7A' },
+    //   headers: 
+    //    { 'Postman-Token': 'e53c0c67-b55c-453d-80fe-78e9bb1f8226',
+    //      'cache-control': 'no-cache' } };
+    
+    // request(options, function (error, response, body) {
+    //   if (error) throw new Error(error);
+    
+    //   console.log(body);
+    // });
+    
+
+
+
   }
 
 }
